@@ -12,6 +12,7 @@ use Sort::Sub qw($naturally);
 our $scenario = {
     summary => 'Benchmark natural sorting',
     modules => {
+        'Sort::Sub' => {version=>'0.05'},
     },
     participants => [
         {
