@@ -41,6 +41,10 @@ our $scenario = {
             code_template => 'sort {Sort::Naturally::XS::ncmp($a, $b)} @{<data>}',
             result_is_list => 1,
         },
+        {
+            fcall_template => 'Sort::Key::Natural::natsort(@{<data>})',
+            result_is_list => 1,
+        },
     ],
     datasets => [
         { name=>'10items' , args=>{data=>[shuffle map { "track$_.mp3" } 1..10 ]} },
