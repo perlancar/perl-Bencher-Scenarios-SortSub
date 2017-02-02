@@ -47,8 +47,8 @@ our $scenario = {
         },
     ],
     datasets => [
-        { name=>'10items' , args=>{data=>[shuffle map { "track$_.mp3" } 1..10 ]} },
-        { name=>'100items', args=>{data=>[shuffle map { "track$_.mp3" } 1..100]} },
+        { name=>'10items' , args=>{data=>[shuffle map { "track$_.mp3" } 1..10 ]} , result=>[map { "track$_.mp3" } 1..10 ]},
+        { name=>'100items', args=>{data=>[shuffle map { "track$_.mp3" } 1..100]} , result=>[map { "track$_.mp3" } 1..100]},
     ],
 };
 
