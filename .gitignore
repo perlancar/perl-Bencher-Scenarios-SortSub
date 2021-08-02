@@ -2,3 +2,4 @@ Bencher-Scenarios-SortSub-*
 .build
 *~
 nytprof*
+.DS_Store
